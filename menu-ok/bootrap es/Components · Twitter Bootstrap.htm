@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://www.anidocs.es/bootstrap/docs/components.php#typography -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Components · Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="http://www.anidocs.es/bootstrap/docs/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://www.anidocs.es/bootstrap/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+   <!--  <link href="http://www.anidocs.es/bootstrap/docs/assets/css/docs.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="docs.css">
+   <!--  <link href="http://www.anidocs.es/bootstrap/docs/assets/js/google-code-prettify/prettify.css" rel="stylesheet"> -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body data-spy="scroll" data-target=".subnav"  >
+
+
+ <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://www.anidocs.es/bootstrap/docs/index.php">Bootstrap</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="http://www.anidocs.es/bootstrap/docs/index.php">Inicio</a>
+              </li>
+              <li class="">
+                <a href="http://www.anidocs.es/bootstrap/docs/scaffolding.php">Adaptable</a>
+              </li>
+              <li class="">
+                <a href="http://www.anidocs.es/bootstrap/docs/base-css.php">Base CSS</a>
+              </li>
+              <li class="">
+                <a href="http://www.anidocs.es/bootstrap/docs/components.php">Componentes</a>
+              </li>
+              <li class="">
+                <a href="http://www.anidocs.es/bootstrap/docs/javascript.php">Javascript plugins</a>
+              </li>
+              <li class="">
+                <a href="http://www.anidocs.es/bootstrap/docs/less.php">Usando LESS</a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class="">
+                <a href="http://www.anidocs.es/bootstrap/docs/download.php">Personalizar</a>
+              </li>
+              <li class="">
+                <a href="http://www.anidocs.es/bootstrap/docs/examples.php">Ejemplos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+
+  <div class="container">
+  <div class="subnav">
+    <ul class="nav nav-pills">
+      <li class="dropdown active">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="http://www.anidocs.es/bootstrap/docs/components.php#">Botones <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="http://www.anidocs.es/bootstrap/docs/components.php#buttonGroups">Grupo de botones</a></li>
+          <li class=""><a href="http://www.anidocs.es/bootstrap/docs/components.php#buttonDropdowns">Botones desplegables</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="http://www.anidocs.es/bootstrap/docs/components.php#">Navegación <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li class=""><a href="http://www.anidocs.es/bootstrap/docs/components.php#navs">Navegación, Tabs o Pestañas (tabs) y Pastillas (pills)</a></li>
+          <li class=""><a href="http://www.anidocs.es/bootstrap/docs/components.php#navbar">Barra de Navegación</a></li>
+          <li class=""><a href="http://www.anidocs.es/bootstrap/docs/components.php#breadcrumbs">Links de seguimiento</a></li>
+          <li class=""><a href="http://www.anidocs.es/bootstrap/docs/components.php#pagination">Paginación</a></li>
+        </ul>
+      </li>
+      <li class=""><a href="http://www.anidocs.es/bootstrap/docs/components.php#labels">Etiquetas</a></li>
+      <li class=""><a href="http://www.anidocs.es/bootstrap/docs/components.php#badges">Emblemas</a></li>
+      <li class=""><a href="./Components · Twitter Bootstrap_files/Components · Twitter Bootstrap.htm">Tipografías</a></li>
+      <li><a href="http://www.anidocs.es/bootstrap/docs/components.php#thumbnails">Miniaturas</a></li>
+      <li><a href="http://www.anidocs.es/bootstrap/docs/components.php#alerts">Alertas</a></li>
+      <li><a href="http://www.anidocs.es/bootstrap/docs/components.php#progress">Barras de progreso</a></li>
+      <li><a href="http://www.anidocs.es/bootstrap/docs/components.php#misc">Otros</a></li>
+    </ul>
+  </div>
+  </div>
+
+
+
+
+
+<!-- Progress bars
+================================================== -->
+<section id="progress">
+  <div class="page-header">
+    <h1>Barras de progreso  <small>Para cargar, redireccionar o para una acción de estado</small></h1>
+  </div>
+
+  <h2>Ejemplos y etiquetado</h2>
+  <div class="row">
+    <div class="span4">
+      <h3>Básico</h3>
+      <p>Progreso de barra por defecto con un degradado vertical</p>
+      <div class="progress">
+        <div class="bar" style="width: 60%;"></div>
+      </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"progress"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bar"</span></li><li class="L2"><span class="pln">       </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">60</span><span class="pun">%;</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+    </div>
+    <div class="span4">
+      <h3>A rayas</h3>
+      <p>Usa un degradado para crear un efecto a rayas (no IE).</p>
+      <div class="progress progress-striped">
+        <div class="bar" style="width: 20%;"></div>
+      </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"progress progress-striped"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bar"</span></li><li class="L2"><span class="pln">       </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">20</span><span class="pun">%;</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+    </div>
+    <div class="span4">
+      <h3>Animado</h3>
+      <p>Toma este ejemplo a rayas y anímalo (no IE).</p>
+      <div class="progress progress-striped active">
+        <div class="bar" style="width: 45%"></div>
+      </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"progress progress-striped</span></li><li class="L1"><span class="atv">     active"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bar"</span></li><li class="L3"><span class="pln">       </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">40</span><span class="pun">%;</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+    </div>
+  </div>
+
+  <h2>Opciones y soporte de navegador</h2>
+  <div class="row">
+    <div class="span3">
+      <h3>Colores adicionales</h3>
+      <p>Las barras de progreso utilizan algunos de los mismos botones y clases de alertas para estilos consistentes.</p>
+      <div class="progress progress-info" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 20%"></div>
+      </div>
+      <div class="progress progress-success" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 40%"></div>
+      </div>
+      <div class="progress progress-warning" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 60%"></div>
+      </div>
+      <div class="progress progress-danger" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 80%"></div>
+      </div>
+    </div>
+     <div class="span3">
+      <h3>Barras a rayas</h3>
+      <p>Similares a los colores sólidos, tenemos varias barras de progreso a rayas.</p>
+      <div class="progress progress-info progress-striped" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 20%"></div>
+      </div>
+      <div class="progress progress-success progress-striped" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 40%"></div>
+      </div>
+      <div class="progress progress-warning progress-striped" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 60%"></div>
+      </div>
+      <div class="progress progress-danger progress-striped" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 80%"></div>
+      </div>
+    </div>
+    <div class="span3">
+      <h3>Comportamiento</h3>
+      <p>Las barras de progreso utilizan transiciones CSS, de manera que si quieres ajustar dinámicamente el ancho a través de javascript, se aplicará el tamaño suavemente.</p>
+      <p>Si usas la clase <code>.active</code> tus barras de progreso <code>.progress-striped</code> mostrarán rayas de izquierda a derecha.</p>
+    </div>
+    <div class="span3">
+      <h3>Soporte de navegadaor</h3>
+      <p>Las barras de progreso usan degradados CSS3, transiciones y animaciones para conseguir sus efectos. Estas características no se soportan en IE7-9 o versiones más antiguas de Firefox.</p>
+      <p>Opera e IE no son compatibles con las animaciones en este momento.</p>
+    </div>
+  </div>
+
+</section>
+
+      <!-- Footer
+      ================================================== -->
+      <footer class="footer">
+        <p class="pull-right"><a href="http://www.anidocs.es/bootstrap/docs/components.php#">ir Arriba</a></p>
+        
+        <p>TRADUCCIÓN</p>
+        <p>Todos estos documentos han sido traducido por el equipo de Animartec.com</p>
+        
+        
+        <p>ORIGINAL</p>
+        <p>Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Icons from <a href="http://glyphicons.com/">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+      </footer>   
+
+    </div><!-- /container -->
+
+ <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Components · Twitter Bootstrap_files/jquery.min.js" type="text/javascript"></script> 
+    <!-- 
+    <script type="text/javascript" src="./Components · Twitter Bootstrap_files/widgets.js"></script>
+   
+    <script src="./Components · Twitter Bootstrap_files/prettify.js"></script>
+    <script src="./Components · Twitter Bootstrap_files/bootstrap-transition.js"></script>
+    <script src="./Components · Twitter Bootstrap_files/bootstrap-alert.js"></script>
+    <script src="./Components · Twitter Bootstrap_files/bootstrap-modal.js"></script>
+    <script src="./Components · Twitter Bootstrap_files/bootstrap-dropdown.js"></script>
+    <script src="./Components · Twitter Bootstrap_files/bootstrap-scrollspy.js"></script>
+    <script src="./Components · Twitter Bootstrap_files/bootstrap-tab.js"></script>
+    <script src="./Components · Twitter Bootstrap_files/bootstrap-tooltip.js"></script>
+    <script src="./Components · Twitter Bootstrap_files/bootstrap-popover.js"></script>
+    <script src="./Components · Twitter Bootstrap_files/bootstrap-button.js"></script>
+    <script src="./Components · Twitter Bootstrap_files/bootstrap-collapse.js"></script>
+    <script src="./Components · Twitter Bootstrap_files/bootstrap-carousel.js"></script>
+    <script src="./Components · Twitter Bootstrap_files/bootstrap-typeahead.js"></script>
+  -->   <script src="./Components · Twitter Bootstrap_files/application.js"></script>
+
+  
+
+</body></html>
